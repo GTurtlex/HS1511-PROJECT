@@ -1,4 +1,3 @@
-
 /*
  *  Game.h
  *  1917 v1.07
@@ -124,7 +123,7 @@ typedef struct _action {
 // so to create the default game as shown on the badly drawn map:
 //
 /*
-#define DEFAULT_DISCIPLINES {STUDENT_BQN, STUDENT_MMONEY, STUDENT_MJ, \ 
+#define DEFAULT_DISCIPLINES {STUDENT_BQN, STUDENT_MMONEY, STUDENT_MJ, \
                 STUDENT_MMONEY, STUDENT_MJ, STUDENT_BPS, STUDENT_MTV, \
                 STUDENT_MTV, STUDENT_BPS,STUDENT_MTV, STUDENT_BQN, \
                 STUDENT_MJ, STUDENT_BQN, STUDENT_THD, STUDENT_MJ, \
