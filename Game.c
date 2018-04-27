@@ -9,9 +9,14 @@
 #include <stdlib.h>
 #include "Game.h"
 
-typedef struct _game { 
-    int currentTurn;
-    more stuff in here
+typedef struct _region {
+    int regionID;
+    int discipline;
+} region;
+
+typedef struct _game {
+    region regions[NUM_REGIONS];
+    int diceValue; 
 } game;
 
 Game newGame (int discipline[], int dice[]);
