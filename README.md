@@ -2,7 +2,7 @@
 
 To set up a local copy of the git repository cd to where you want it and type:
 
-git clone https://github.com/1011776/HS1511-CCGS.git
+git clone https://github.com/CTCH-HS1511-TUTE/HS1511-PROJECT.git
 
 
 This code will add/stage the changes you have made, you need to do this before you commit:
@@ -28,3 +28,6 @@ git pull
 This shows you all the changes you have made:
 
 git status
+
+If you want to list all the git commands just type: 
+git
