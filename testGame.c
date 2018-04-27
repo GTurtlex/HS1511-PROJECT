@@ -12,8 +12,8 @@
 int main (int argc, char * argv[]) { 
     printf("Testing the next turn thingo");
     Game newBoard;
-    playerID = getWhoseTurn(newBoard);
-    makeAction(newBoard, NEXT_TURN);
+    int playerID = getWhoseTurn(newBoard);
+    makeAction(newBoard, PASS);
     assert(playerID != getWhoseTurn(newBoard));
     
     printf("All tests passed! You are awesome!");
