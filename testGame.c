@@ -12,7 +12,7 @@
 int main (int argc, char * argv[]) {
     
     printf("Testing the next turn thingo");
-    Game newGame;
+    Game newBoard;
     playerID = getWhoseTurn(newBoard);
     makeAction(newBoard, NEXT_TURN);
     assert(playerID != getWhoseTurn(newBoard));
