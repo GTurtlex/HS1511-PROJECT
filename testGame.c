@@ -9,8 +9,7 @@
 #include <stdlib.h>
 #include "Game.h"
     
-int main (int argc, char * argv[]) {
-    
+int main (int argc, char * argv[]) { 
     printf("Testing the next turn thingo");
     Game newBoard;
     playerID = getWhoseTurn(newBoard);
