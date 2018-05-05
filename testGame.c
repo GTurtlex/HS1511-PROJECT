@@ -10,12 +10,8 @@
 #include "Game.h"
     
 int main (int argc, char * argv[]) { 
-    printf("Testing the next turn thingo");
-    Game newBoard;
-    int playerID = getWhoseTurn(newBoard);
-    makeAction(newBoard, PASS);
-    assert(playerID != getWhoseTurn(newBoard));
-    
-    printf("All tests passed! You are awesome!");
+    Game testGame = newGame(DEFAULT_DISCIPLINES, DEFAULT_DICE);
+    disposeGame (testGame);
+    printf("All tests passed! You are AWESOME!");
     return EXIT_SUCCESS;
 }
