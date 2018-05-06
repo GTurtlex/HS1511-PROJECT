@@ -10,13 +10,49 @@
 #include "Game.h"
 
 typedef struct _region {
+    // Gives Regions IDs to call upon
     int regionID;
-    int discipline;
+
+    int discipline; // Don't know what discipline is used for?
+
+    // Gives each region a resource on grid
+    int regionWheat[MAX_WHEAT];
+    int regionStone[MAX_STONE];
+    int regionWood[MAX_WOOD];
+    int regionFarm[MAX_FARM];
 } region;
 
 typedef struct _game {
     region regions[NUM_REGIONS];
-    int diceValue; 
+    int diceValue;
+    int MaxPoints;
+
+    // Number of Unis Owned
+    int p1Unis[MAX_UNIS];
+    int p2Unis[MAX_UNIS];
+    int p3Unis[MAX_UNIS];
+
+    // Gives the Unis a location on the map
+    int p1UniID[MAX_UNIS];
+    int p2UniID[MAX_UNIS];
+    int p3UniID[MAX_UNIS];
+
+    // Number of Roads Owned
+    int p1Road[MAX_ROAD];
+    int p2Road[MAX_ROAD];
+    int p3Road[MAX_ROAD];
+
+    // Gives the Roads a location on the map
+    int p1RoadID[MAX_ROAD];
+    int p2RoadID[MAX_ROAD];
+    int p3RoadID[MAX_ROAD];
+
+    // A list to add and take out resources from the players hand
+    int p1Resources[MAX_RESOURCE];
+    int p2Resources[MAX_RESOURCE];
+    int p3Resources[MAX_RESOURCE];
+
+
 } game;
 
 Game newGame (int discipline[], int dice[]);
